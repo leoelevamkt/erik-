@@ -12,6 +12,12 @@ export default defineConfig({
   },
   build: {
     chunkSizeWarningLimit: 5000,
+    outDir: 'dist/client',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
   },
   resolve: {
     alias: {

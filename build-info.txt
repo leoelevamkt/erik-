@@ -1,0 +1,5 @@
+Build timestamp: 2025-09-16 14:08:59Z
+Project: Erika Pires Reis - Psicóloga Clínica
+Status: Ready for Netlify deployment
+Dependencies: Cleaned and optimized
+Cache busting: Enabled
