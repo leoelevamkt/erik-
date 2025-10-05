@@ -1,6 +1,8 @@
 import { Instagram, Heart, Sparkles, MapPin, Phone } from 'lucide-react';
+import { useAnalytics } from '@/react-app/components/GoogleAnalytics';
 
 export default function Footer() {
+  const { trackWhatsAppClick, trackInstagramClick } = useAnalytics();
   return (
     <footer className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
       {/* Background decorations */}
@@ -60,6 +62,7 @@ export default function Footer() {
                       href="https://www.instagram.com/psierikapires?igsh=MTBkMmRlbjNqc2lnMw=="
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={trackInstagramClick}
                       className="group flex items-center gap-2 bg-gradient-to-r from-primary to-rose-400 text-white px-4 py-2 rounded-xl font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
                     >
                       <Instagram size={18} className="group-hover:scale-110 transition-transform duration-300" style={{color: 'white'}} />
@@ -75,6 +78,7 @@ export default function Footer() {
                         href="https://wa.me/553492522850"
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={trackWhatsAppClick}
                         className="text-white hover:text-primary transition-colors duration-300 font-medium"
                       >
                         (34) 92522-850
@@ -115,6 +119,7 @@ export default function Footer() {
                   href="https://wa.me/553492522850?text=Olá! Gostaria de agendar uma sessão de terapia."
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={trackWhatsAppClick}
                   className="group bg-primary/20 hover:bg-primary text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:scale-105 border border-primary/30 hover:border-primary"
                 >
                   <span className="group-hover:scale-110 transition-transform duration-300 inline-block">
