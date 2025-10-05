@@ -1,14 +1,17 @@
 import { useState } from 'react';
 import { Menu, X, MessageCircle } from 'lucide-react';
+import { useAnalytics } from '@/react-app/components/GoogleAnalytics';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { trackWhatsAppClick, trackSectionView } = useAnalytics();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
       setIsMenuOpen(false);
+      trackSectionView(sectionId);
     }
   };
 
@@ -74,6 +77,7 @@ export default function Header() {
               href="https://wa.me/553492522850?text=Olá! Gostaria de agendar uma sessão de terapia."
               target="_blank"
               rel="noopener noreferrer"
+              onClick={trackWhatsAppClick}
               className="relative group text-white px-6 py-3 text-sm font-bold hover:bg-white border border-white/50 transition-all duration-300 flex items-center gap-2 rounded-xl backdrop-blur-sm hover:shadow-lg hover:shadow-white/20 hover:scale-105 hover:text-black"
               style={{ background: 'rgba(255, 255, 255, 0.1)' }}
             >
@@ -135,6 +139,7 @@ export default function Header() {
                 href="https://wa.me/553492522850?text=Olá! Gostaria de agendar uma sessão de terapia."
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={trackWhatsAppClick}
                 className="text-white px-6 py-2 text-sm font-bold hover:bg-white hover:text-black border border-white transition-all duration-300 flex items-center gap-2 w-fit rounded-lg"
                 style={{ backgroundColor: 'transparent' }}
               >
