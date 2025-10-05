@@ -1,5 +1,5 @@
 import { Instagram, Heart, Sparkles, MapPin, Phone } from 'lucide-react';
-import { useAnalytics } from '@/react-app/components/GoogleAnalytics';
+import { useAnalytics } from '@/react-app/hooks/useAnalytics';
 
 export default function Footer() {
   const { trackWhatsAppClick, trackInstagramClick } = useAnalytics();
