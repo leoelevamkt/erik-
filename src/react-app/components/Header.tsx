@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, MessageCircle } from 'lucide-react';
-import { useAnalytics } from '@/react-app/components/GoogleAnalytics';
+import { useAnalytics } from '@/react-app/hooks/useAnalytics';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
