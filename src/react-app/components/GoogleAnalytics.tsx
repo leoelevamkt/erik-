@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 
 declare global {
   interface Window {
-    gtag: (...args: any[]) => void;
-    dataLayer: any[];
+    gtag: (...args: unknown[]) => void;
+    dataLayer: unknown[];
   }
 }
 
@@ -23,8 +23,8 @@ export default function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps)
     window.dataLayer = window.dataLayer || [];
     
     // Função gtag
-    window.gtag = function() {
-      window.dataLayer.push(arguments);
+    window.gtag = function(...args: unknown[]) {
+      window.dataLayer.push(args);
     };
 
     // Configuração inicial
@@ -51,50 +51,3 @@ export default function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps)
 
   return null; // Este componente não renderiza nada visível
 }
-
-// Hook personalizado para tracking de eventos
-export const useAnalytics = () => {
-  const trackEvent = (action: string, category: string, label?: string, value?: number) => {
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', action, {
-        event_category: category,
-        event_label: label,
-        value: value,
-      });
-    }
-  };
-
-  const trackPageView = (page_title: string, page_location: string) => {
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'page_view', {
-        page_title,
-        page_location,
-      });
-    }
-  };
-
-  const trackWhatsAppClick = () => {
-    trackEvent('click', 'contact', 'whatsapp_button');
-  };
-
-  const trackInstagramClick = () => {
-    trackEvent('click', 'social', 'instagram_link');
-  };
-
-  const trackSectionView = (sectionName: string) => {
-    trackEvent('view', 'section', sectionName);
-  };
-
-  const trackFormSubmit = (formName: string) => {
-    trackEvent('submit', 'form', formName);
-  };
-
-  return {
-    trackEvent,
-    trackPageView,
-    trackWhatsAppClick,
-    trackInstagramClick,
-    trackSectionView,
-    trackFormSubmit,
-  };
-};
