@@ -1,4 +1,4 @@
-import {CreditCard, FileText, CheckCircle, Sparkles, Shield, Clock } from 'lucide-react';
+import {CreditCard, FileText, Shield, Clock } from 'lucide-react';
 
 export default function Pricing() {
   const paymentFeatures = [
