@@ -52,6 +52,12 @@ export default function Header() {
               <span className="relative z-10">processo</span>
             </button>
             <button 
+              onClick={() => scrollToSection('valores')}
+              className="text-white transition-all duration-300 font-medium hover:text-black relative group px-3 py-2 rounded-lg hover:bg-white/10"
+            >
+              <span className="relative z-10">valores</span>
+            </button>
+            <button 
               onClick={() => scrollToSection('depoimentos')}
               className="text-white transition-all duration-300 font-medium hover:text-black relative group px-3 py-2 rounded-lg hover:bg-white/10"
             >
@@ -116,6 +122,12 @@ export default function Header() {
                 className="text-left text-white transition-colors font-semibold hover:text-black"
               >
                 processo terapêutico
+              </button>
+              <button 
+                onClick={() => scrollToSection('valores')}
+                className="text-left text-white transition-colors font-semibold hover:text-black"
+              >
+                valores e pagamento
               </button>
               <button 
                 onClick={() => scrollToSection('depoimentos')}
