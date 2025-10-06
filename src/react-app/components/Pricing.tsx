@@ -1,4 +1,4 @@
-import { DollarSign, CreditCard, FileText, CheckCircle, Sparkles, Shield, Clock } from 'lucide-react';
+import {CreditCard, FileText, CheckCircle, Sparkles, Shield, Clock } from 'lucide-react';
 
 export default function Pricing() {
   const paymentFeatures = [
@@ -118,8 +118,6 @@ export default function Pricing() {
             );
           })}
         </div>
-
-        
 
         {/* Note about invoice */}
         <div className="mt-16 text-center">
