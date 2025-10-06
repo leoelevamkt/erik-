@@ -118,21 +118,6 @@ export default function Pricing() {
             );
           })}
         </div>
-
-        {/* Note about invoice */}
-        <div className="mt-16 text-center">
-          <div className="bg-white/60 backdrop-blur-sm p-8 rounded-2xl border border-gray-100 max-w-4xl mx-auto">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <FileText size={28} style={{color: 'rgba(222, 146, 135, 0.95)'}} />
-              <h4 className="text-2xl font-bold text-gray-900">Nota Fiscal Inclusa</h4>
-            </div>
-            <p className="text-lg text-gray-600 font-medium leading-relaxed">
-              <span className="text-primary font-semibold">Para sua comodidade:</span> Emito nota fiscal para todos os atendimentos, 
-              permitindo que você utilize o reembolso do seu plano de saúde e mantenha sua organização financeira em dia.
-            </p>
-          </div>
-        </div>
-      </div>
     </section>
   );
 }
