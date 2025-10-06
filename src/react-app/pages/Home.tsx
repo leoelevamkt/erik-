@@ -4,6 +4,7 @@ import Hero from '@/react-app/components/Hero';
 import About from '@/react-app/components/About';
 import Services from '@/react-app/components/Services';
 import Process from '@/react-app/components/Process';
+import Pricing from '@/react-app/components/Pricing';
 import Testimonials from '@/react-app/components/Testimonials';
 import FAQ from '@/react-app/components/FAQ';
 import Contact from '@/react-app/components/Contact';
@@ -30,6 +31,7 @@ export default function Home() {
         <About />
         <Services />
         <Process />
+        <Pricing />
         <Testimonials />
         <FAQ />
         <Contact />
