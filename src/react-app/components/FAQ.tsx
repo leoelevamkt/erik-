@@ -14,28 +14,20 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "Como saber se preciso de terapia?",
-      answer: "Existem incontáveis motivos para se buscar terapia e todos eles são válidos. Muitas pessoas buscam esse espaço quando se percebem envoltos por desafios emocionais diversos, como ansiedade, tristeza, questões de relacionamento, vida profissional, identidade e outros. Não é preciso esperar estar em crise para procurar ajuda, e se você sente que pode se beneficiar de um espaço seguro para falar e refletir sobre sua vida, isso já é um ótimo sinal de que a terapia pode te ajudar."
+      question: "Como funciona a terapia? O que esperar da terapia?",
+      answer: "A terapia é um espaço pensado para você, onde pode trazer suas histórias, sentimentos e experiências sem julgamentos. Mais do que buscar respostas prontas, é um processo de construção conjunta: vamos explorar os sentidos, criar novas perspectivas e ampliar possibilidades de escolha diante da sua vida. Não existe um caminho único ou linear, cada encontro é uma oportunidade de descoberta. Algumas vezes pode ser leve e trazer alívio imediato, outras pode mexer em questões mais profundas. O importante é que você não estará sozinho nesse percurso: caminharemos juntos, no seu tempo, respeitando suas necessidades. Acolho cada pessoa em sua singularidade, acreditando que é no diálogo e na relação que mudanças e novas compreensões podem acontecer."
     },
     {
-      question: "Como funciona o atendimento online? É eficaz?",
-      answer: "O atendimento online acontece por meio da plataforma Google Meet, facilitando o acesso à terapia de forma prática, segura e sigilosa. Mantenho a mesma qualidade e confidencialidade de um atendimento presencial, e faz-se necessário ter uma conexão de internet estável, bem como estar em um local privado, seguro e confortável, para o melhor funcionamento."
+      question: "Preciso ter um \"problema grave\" para começar terapia?",
+      answer: "Não. A terapia pode ser procurada em diferentes momentos: para lidar com dificuldades específicas, crises emocionais, ou simplesmente para se conhecer melhor e ampliar possibilidades de vida."
     },
     {
-      question: "Nunca fiz terapia, como é a primeira sessão?",
-      answer: "Meu objetivo na primeira sessão é entender um pouco mais sobre você, seu momento, sua história e as razões que te trouxeram para a terapia. Fique à vontade para compartilhar o que desejar e fizer sentido, e lembre-se que não é necessário falar tudo de uma vez, vamos no seu ritmo e teremos tempo para olhar tudo com cuidado."
+      question: "Em quanto tempo vou perceber resultados?",
+      answer: "Não existe um prazo único. Algumas pessoas sentem mudanças logo nas primeiras sessões, outras percebem transformações mais sutis ao longo do processo. O importante é respeitar seu tempo e caminhar junto nessa construção."
     },
     {
-      question: "O que posso esperar da terapia?",
-      answer: "Você pode esperar um espaço de acolhimento, respeito e compreensão, onde vamos explorar juntos as suas experiências e histórias. É um processo de autoconhecimento e de criação de novos significados para a sua vida, respeitando sempre o seu ritmo. A terapia não traz respostas prontas, mas abre caminhos para descobrir novas formas de lidar com os desafios e construir uma vida mais alinhada com o que é importante para você."
-    },
-    {
-      question: "Quais públicos e demandas atende?",
-      answer: "Atuo na clínica com jovens à partir de 16 anos, adultos e vestibulandos. Em relação à demandas, possuo experiência com questões emocionais, relacionamentos (amorosos, familiares, amizades), carreira e vida profissional, autoestima, identidade, família, ansiedade relacionada aos estudos e vestibulares, entre outros."
-    },
-    {
-      question: "Qual a frequência e a duração das sessões?",
-      answer: "As sessões são realizadas de maneira semanal ou quinzenal, e a duração é de 50 minutos. Os valores das sessões e para seguir de acordo com as normas do Conselho Federal de Psicologia, fica inviável divulgar os valores neste canal. O pagamento pode ser realizado por pix, transferência bancária ou cartão. Para mais detalhes, entre em contato."
+      question: "O que eu preciso falar na sessão?",
+      answer: "O que for importante para você. Pode ser algo que aconteceu na semana, uma lembrança, um incômodo ou até mesmo o silêncio — tudo isso tem espaço e sentido dentro da terapia."
     }
   ];
 
