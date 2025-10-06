@@ -84,7 +84,6 @@ export default function Pricing() {
                 className="inline-flex items-center gap-3 bg-gradient-to-r from-primary to-rose-400 text-white px-10 py-5 text-xl font-bold transition-all duration-300 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transform"
               >
                 <span>Agendar Sessão</span>
-                <DollarSign size={24} style={{color: 'white'}} />
               </a>
             </div>
           </div>
@@ -120,51 +119,7 @@ export default function Pricing() {
           })}
         </div>
 
-        {/* Payment methods details */}
-        <div className="bg-gradient-to-r from-primary/10 via-rose-50/50 to-primary/10 p-12 rounded-3xl border border-primary/20 shadow-lg">
-          <div className="text-center mb-10">
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <Sparkles size={32} style={{color: 'rgba(222, 146, 135, 0.95)'}} />
-              <h3 className="text-3xl font-bold text-gray-900">Formas de Pagamento</h3>
-              <Sparkles size={32} style={{color: 'rgba(222, 146, 135, 0.95)'}} />
-            </div>
-            <p className="text-xl text-gray-600 font-medium max-w-2xl mx-auto">
-              Escolha a forma de pagamento que melhor se adequa às suas necessidades
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="flex items-center gap-4 bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-white/50">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary to-rose-400 rounded-xl flex items-center justify-center flex-shrink-0">
-                <CheckCircle size={24} className="text-white" />
-              </div>
-              <div>
-                <h4 className="text-lg font-bold text-gray-900">PIX</h4>
-                <p className="text-gray-600 font-medium">Instantâneo e prático</p>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-4 bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-white/50">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary to-rose-400 rounded-xl flex items-center justify-center flex-shrink-0">
-                <CheckCircle size={24} className="text-white" />
-              </div>
-              <div>
-                <h4 className="text-lg font-bold text-gray-900">Boleto</h4>
-                <p className="text-gray-600 font-medium">Tradicional e seguro</p>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-4 bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-white/50">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary to-rose-400 rounded-xl flex items-center justify-center flex-shrink-0">
-                <CheckCircle size={24} className="text-white" />
-              </div>
-              <div>
-                <h4 className="text-lg font-bold text-gray-900">Link de Pagamento</h4>
-                <p className="text-gray-600 font-medium">Flexível e conveniente</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
         {/* Note about invoice */}
         <div className="mt-16 text-center">
