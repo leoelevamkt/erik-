@@ -93,24 +93,17 @@ export default function Pricing() {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {paymentFeatures.map((feature, index) => {
             const IconComponent = feature.icon;
-            
             return (
-              <div
-                key={index}
-                className="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 card-hover"
-              >
+              <div key={index} className="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 card-hover">
                 <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-rose-100/30 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <IconComponent size={32} style={{color: 'rgba(222, 146, 135, 0.95)'}} />
                 </div>
-                
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors duration-300">
                   {feature.title}
                 </h3>
-                
                 <p className="text-lg font-bold text-primary mb-3">
                   {feature.description}
                 </p>
-                
                 <p className="text-gray-600 font-medium leading-relaxed">
                   {feature.details}
                 </p>
@@ -118,6 +111,7 @@ export default function Pricing() {
             );
           })}
         </div>
+      </div> 
     </section>
   );
 }
